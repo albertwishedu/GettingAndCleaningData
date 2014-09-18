@@ -13,7 +13,7 @@ This file describes how the run_analysis.R script works:
 > *   Read the data into a new data frame within R: df <- read.table('tidydata_with_means.txt'). 
    
 The script itself works in the following way (see R script for inline comments):
-### 1.  Read the training data, labels, subjects into seperate data frames (X_train.txt, Y_train.txt, subject_train.txt)
+[1] Read the training data, labels, subjects into seperate data frames (X_train.txt, Y_train.txt, subject_train.txt)
 ### 2.  Read the test data, labels, subjects into seperate data frames (X_text.txt, Y_test.txt, subject_test.txt)
 ### 3.  Join the respective data frames using row binding: rbind()
 ### 4.  Read the features into a data frame (features.txt)
