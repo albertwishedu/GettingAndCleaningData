@@ -5,15 +5,15 @@ Getting and Cleaning Data Assignment
 This file describes how the run_analysis.R script works:
 
 
-   Download and extract the data file from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and rename the folder to 'data'
+   Download and extract the data file from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and rename the folder to 'data';
 
-   Put the run_analysis.R file into the same folder as the data directory and make sure you set your working directory within R to that directory
-   Next, source("run_analysis.R") within R to generate the tidy data set
-   Within the working directory you should find the output data file called 'tidydata_with_means.txt'
-   Read the data into a new data frame within R: df <- read.table('tidydata_with_means.txt')
+   Put the run_analysis.R file into the same folder as the data directory and make sure you set your working directory within R to that directory; 
+   Next, source("run_analysis.R") within R to generate the tidy data set;
+   Within the working directory you should find the output data file called 'tidydata_with_means.txt';
+   Read the data into a new data frame within R: df <- read.table('tidydata_with_means.txt'). 
    
 The script itself works in the following way (see R script for inline comments):
-1.  Read the training data, labels, subjects into seperate data frames (X_train.txt, Y_train.txt, subject_train.txt)
+[1.]  Read the training data, labels, subjects into seperate data frames (X_train.txt, Y_train.txt, subject_train.txt)
 2.  Read the test data, labels, subjects into seperate data frames (X_text.txt, Y_test.txt, subject_test.txt)
 3.  Join the respective data frames using row binding: rbind()
 4.  Read the features into a data frame (features.txt)
